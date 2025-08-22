@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Passenger Login - SkyJet Airlines</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #004e92, #000428);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background-color: #1a1f3c;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 28px;
+      color: #00c3ff;
+    }
+
+    .login-box label {
+      display: block;
+      margin-bottom: 8px;
+      color: #ccc;
+    }
+
+    .login-box input[type="email"],
+    .login-box input[type="password"] {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #2d3454;
+      color: white;
+      font-size: 15px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #00c3ff;
+      border: none;
+      border-radius: 8px;
+      color: #000428;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-box button:hover {
+      background-color: #00a2d8;
+    }
+
+    .login-box .footer-text {
+      margin-top: 20px;
+      text-align: center;
+      font-size: 13px;
+      color: #aaa;
+    }
+
+    .login-box .footer-text a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+
+    .airline-logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .airline-logo img {
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <div class="airline-logo">
+      
+    </div>
+    <h2>Passenger Login</h2>
+    <form action="passenger_login" method="POST">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="your@email.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required />
+
+      <button type="submit">Login</button>
+    </form>
+    <div class="footer-text">
+      Don't have an account? <a href="register.html">Register here</a>
+    </div>
+  </div>
+</body>
+</html>
